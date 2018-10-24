@@ -5,25 +5,32 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/Rectangle1"
+        android:background="@drawable/wallpaper"
         tools:context=".Main">
 
     <android.support.design.widget.FloatingActionButton
             android:text="Next"
+
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:src="@drawable/ic_arrow_back_white"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_arrow_forward_white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button"
             app:fabSize="normal"
-         />
+            app:backgroundTint="@color/colorPrimaryDark"/>
 
     <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@mipmap/Hello" tools:layout_editor_absoluteY="30dp"
+            android:layout_height="wrap_content" app:srcCompat="@mipmap/hello" tools:layout_editor_absoluteY="30dp"
             tools:layout_editor_absoluteX="16dp" android:id="@+id/imageView2" tools:ignore="MissingConstraints"
             android:layout_marginTop="20dp" android:layout_marginStart="25dp"
     />
-
-    </>
+    <ImageView
+            android:layout_width="248dp"
+            android:layout_height="132dp" app:srcCompat="@mipmap/info1" android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/imageView2" android:id="@+id/imageView3" android:layout_marginTop="80dp"
+            android:layout_marginEnd="-168dp"/>
+</RelativeLayout>
