@@ -13,15 +13,24 @@ class Main2Activity : AppCompatActivity() {
         navigatetomain3()
         }
         card_view1.setOnClickListener {
-
+        navigatetomain4()
         }
         card_view2.setOnClickListener {
-
+            navigatetomain5()
         }
     }
     fun navigatetomain3(){
         var intent = Intent(this,Main3Activity::class.java)
-        intent.putExtra("id",1)
+        startActivity(intent)
+
+    }
+    fun navigatetomain4(){
+        var intent = Intent(this,Main4Activity::class.java)
+        startActivity(intent)
+
+    }
+    fun navigatetomain5(){
+        var intent = Intent(this,Main5Activity::class.java)
         startActivity(intent)
 
     }

@@ -2,17 +2,24 @@ package com.helloapp.discovertimisoarafinale
 
 import android.content.Intent
 import android.os.Bundle
+import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
-import android.view.View
 
 class Main : AppCompatActivity() {
+
+    lateinit var floatingActionButton : FloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        floatingActionButton = findViewById(R.id.floating_button)
+        floatingActionButton.setOnClickListener{
+            onclick()
+        }
     }
-    public fun onclick(view:View){
+
+
+    fun onclick() {
         var intent = Intent(this,Main2Activity::class.java)
         startActivity(intent)
 

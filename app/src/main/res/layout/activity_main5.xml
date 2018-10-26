@@ -13,22 +13,22 @@
             android:layout_gravity="center"
             android:layout_width="300dp"
 
-            android:layout_height="110dp"
+            android:layout_height="140dp"
             android:layout_marginTop="20dp"
             android:layout_centerHorizontal="true"
             android:elevation="2dp"
             card_view:cardCornerRadius="4dp">
-        <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:background="@drawable/belvedere" />
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent"/>
+
         <TextView
-                android:id="@+id/info1"
-                android:text="Belvedere Timisoara"
+                android:id="@+id/info_text"
+                android:text="#5"
+                android:layout_marginStart="10dp"
                 android:gravity="bottom"
-                android:textSize="30sp"
-                android:textColor="#FFFF"
+                android:textSize="50sp"
+                android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-        />
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -37,8 +37,8 @@
             android:layout_gravity="center"
             android:layout_width="300dp"
             android:layout_centerHorizontal="true"
-            android:layout_height="80dp"
-            android:layout_marginTop="1dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="25dp"
             android:layout_below="@id/card_view"
             card_view:cardCornerRadius="4dp">
 
@@ -48,14 +48,11 @@
 
         <TextView
                 android:id="@+id/info_text1"
-                android:text="Address: Strada Marasesti nr. 1 - 3, Timișoara 300086
-Hours:
-Open ⋅ Closes 11PM
-Reservations: restaurant-belvedere.ro
-Phone: 0256 300 231"
-                android:gravity="top"
-                android:textSize="12sp"
-                android:textColor="#000"
+                android:text=""
+                android:layout_marginStart="10dp"
+                android:gravity="bottom"
+                android:textSize="50sp"
+                android:textColor="#FFFFFF"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
     </android.support.v7.widget.CardView>
@@ -64,7 +61,7 @@ Phone: 0256 300 231"
             android:id="@+id/card_view2"
             android:layout_gravity="center"
             android:layout_width="300dp"
-            android:layout_height="110dp"
+            android:layout_height="140dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:layout_below="@id/card_view1"
